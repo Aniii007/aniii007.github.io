@@ -6,8 +6,27 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
+    :root {
+      font-size: 16px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      :root {
+        font-size: 20px;
+      }
+
+      .social-media-icon {
+        margin-left: 0.625rem;
+        height: 5rem;
+        width: 5rem;
+      }
+
+      h1 {
+        font-size: 10rem;
+      }
+    }
+
     body {
-      overflow: hidden;
       font-family: 'Nunito Sans';
       background-color: rgb(25, 25, 25);
       color: aliceblue;
@@ -30,12 +49,13 @@
 
     hr {
       border: 0;
-      border-radius: 5px;
-      height: 2px;
+      border-radius: 0.3125rem;
+      height: 0.125rem;
       background-image: linear-gradient(to right, #43cea2, #185a9d);
     }
 
     h1 {
+      font-size: 5rem;
       background: linear-gradient(to right, #c5fae2, #d9ffee);
       -webkit-background-clip: text;
       background-clip: text;
@@ -45,13 +65,13 @@
     .social-media-icons {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 1.25rem;
     }
 
     .social-media-icon {
-      margin-left: 10px;
-      height: 80px;
-      width: 80px;
+      margin-left: 0.625rem;
+      height: 5rem;
+      width: 5rem;
     }
 
     .social-media-icon:hover {
@@ -63,10 +83,10 @@
 <body>
   <center>
     <div>
-      <h1 style="font-size: 80px;">Aniii007</h1>
-      <h3 style="font-size: 40px;">Since 2018 <strong style="color: red;"><a href="secret007.html"> :) </a></strong>
+      <h1>Aniii007</h1>
+      <h3 style="font-size: 2.5rem;">Since 2018 <strong style="color: red;"><a href="secret007.html"> :) </a></strong>
       </h3>
-      <h3 style="font-size: 20px;">Follow me on:</h3>
+      <h3 style="font-size: 1.25rem;">Follow me on:</h3>
     </div>
     <hr>
     <div class="social-media-icons">
