@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .social-media-icon {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+body {
+  font-family: 'Nunito Sans';
+  background-color: rgb(25, 25, 25);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-media-icon:not(:hover) {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:link:hover{
+  transform: scale(1.1);
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+
+a:not(:hover) {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+body:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+a:hover~body:not(:hover) {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.social-media-icon:not(:hover)~body:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+h1,
+h3 {
+  text-align: center;
+}
+
+hr {
+  z-index: 1;
+  border: 0;
+  border-radius: 0.3125rem;
+  height: 0.5rem;
+  width: 30%;
+  margin: 1em 0;
+  background-image: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+
+h1 {
+  font-size: 5rem;
+  background: linear-gradient(to right, #c5fae2, #d9ffee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.social-media-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.social-media-icon:hover {
+  opacity: 0.5;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar:hover {
+  transform: scaleY(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar li {
+  margin-right: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+.navbar:hover a {
+  transform: scaleX(1.1);
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar:hover ul {
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar a {
+    font-size: 1rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar:hover a {
+    align-items: center;
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar li {
+    margin-right: 1rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navbar:hover ul {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(1.2);
+  }
+
+  .logo {
+    margin-left: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+  }
+}

@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(25, 25, 25);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat';
+  color: white;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 5rem;
+  font-weight: 100;
+  animation: typing 2.5s steps(90, end), fade-out 1s 5s forwards;
+}
+
+.typewriter {
+  content: 'is';
+  white-space: pre;
+}
+
+.typewriter {
+  content: ',';
+  white-space: pre;
+}
+
+.typewriter {
+  content: 'who';
+  white-space: pre;
+}
+
+.typewriter {
+  content: 'hold';
+  white-space: pre;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.red-text {
+  animation: red-color 1s 5.2s forwards;
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+@keyframes red-color {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .typewriter {
+    font-size: 230%;
+  }
+  
+  .red-text {
+    font-size: 150%;
+  }
+}
