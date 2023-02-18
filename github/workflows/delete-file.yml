@@ -1,0 +1,16 @@
+name: Delete file on a specific date
+
+on:
+  schedule:
+    - cron: '0 13 21 1 *'
+
+jobs:
+  delete_file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up at command
+        run: sudo apt-get install at
+      - name: Schedule deletion of file
+        run: |
+          echo './delete_file.sh' | at 13:00 Jan 21 2022
