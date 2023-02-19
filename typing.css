@@ -26,7 +26,7 @@ body {
   white-space: nowrap;
   font-size: 5rem;
   font-weight: 100;
-  animation: typing 2.5s steps(80, end), fade-out 1s 5s forwards;
+  animation: typing 2.5s steps(70, end), fade-out 1s 5s forwards;
 }
 
 .typewriter {
