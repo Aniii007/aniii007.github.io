@@ -2,6 +2,7 @@
 Portfolio
 
 History
+_____________________________________
 Initial Creation Date: 05 November 2020 
 - Background and Text added.
 - Not yet published.
@@ -24,3 +25,5 @@ Development Paused.
 Update 3: 18 February 2023
 - New UI
 - New Pages added.
+______________________________________
+New features coming soon..
