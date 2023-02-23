@@ -24,4 +24,4 @@ Update 3: 18 February 2023
 - New UI
 - New Pages added.
 ______________________________________
-New features coming soon..
+New features coming soon...
